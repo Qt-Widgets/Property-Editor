@@ -9,7 +9,7 @@
 class CDoubleProperty : public CBaseProperty
 {
 public:
-    CDoubleProperty(const QByteArray& id, const QString &name, double value, double defaultValue = 0, double min = DBL_MIN, double max = DBL_MAX);
+    CDoubleProperty(const QByteArray& id, const QString &name, double value, double defaultValue = 0, double min = -DBL_MAX, double max = DBL_MAX);
     CDoubleProperty(CBaseProperty *top, const QByteArray& id, const QString &name, double value, double defaultValue = 0, double min = DBL_MIN, double max = DBL_MAX);
 
     void setValue(double value);
